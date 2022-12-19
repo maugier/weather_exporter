@@ -94,8 +94,7 @@ weather_illumination_relative {lux}
 #[tokio::main(flavor="current_thread")]
 async fn main() -> Result<()> {
 
-    let home = format!("<html><body><h1>Weather Station v0.1</h1><ul><li><a href=\"https://git.xolus.net/max/weather_exporter\">source code</a></li><li><a href=\"/metrics\">metrics</a></li></ul></body></html>");
-    let home: &'static str = Box::leak(home.into_boxed_str());
+    let home = "<html><body><h1>Weather Station v0.1</h1><ul><li><a href=\"https://git.xolus.net/max/weather_exporter\">source code</a></li><li><a href=\"/metrics\">metrics</a></li></ul></body></html>";
 
     let station = Station::new()?;
     let station = Arc::new(Mutex::new(station));
