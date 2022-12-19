@@ -1,0 +1,10 @@
+[package]
+name = "weather_exporter"
+version = "0.1.0"
+edition = "2021"
+description = "A Prometheus exporter for weather data."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+warp = "0.3.3"
