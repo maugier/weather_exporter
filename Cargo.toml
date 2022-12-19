@@ -9,5 +9,8 @@ description = "A Prometheus exporter for weather data."
 [dependencies]
 bme280 = "0.4.4"
 linux-embedded-hal = "0.4.0-alpha.2"
+embedded-hal = "1.0.0-alpha.7"
 tokio = { version = "1.23.0", features = ["macros", "rt"] }
 warp = "0.3.3"
+byteorder = "1.4.3"
+anyhow = "1.0.68"
