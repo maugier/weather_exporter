@@ -7,4 +7,7 @@ description = "A Prometheus exporter for weather data."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bme280 = "0.4.4"
+linux-embedded-hal = "0.4.0-alpha.2"
+tokio = { version = "1.23.0", features = ["macros", "rt"] }
 warp = "0.3.3"
